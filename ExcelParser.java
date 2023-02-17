@@ -57,5 +57,21 @@ public class ExcelParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
+        /*
+                StringBuilder buf = new StringBuilder();
+        //String city,state;
+        buf.append("RepoName").append(",").append("WorkFlowName").append(",").append("TotalRuns").append(",").append("Dev").append("QA").append("Prd").append(",").append("DevOps").append(System.lineSeparator());
+        for(WorkflowPOJO pOJO : workFlows){
+            //buf.append(servicePOJO.getName()).append(",").append(servicePOJO.getFormattedName()).append(",").append(servicePOJO.getStoreNum()).append(",").append(servicePOJO.getSysId()).append(",").append("\"").append(servicePOJO.getState()).append("\"").append(",").append("\"").append(servicePOJO.getCity()).append("\"").append(System.lineSeparator());
+            buf.append(pOJO.getName()).append(",").append(servicePOJO.getFormattedName()).append(",").append(servicePOJO.getStoreNum()).append(",").append(servicePOJO.getSysId()).append(",").append(servicePOJO.getState()).append(",").append(servicePOJO.getCity()).append(System.lineSeparator());
+        }
+        File file = new File(outputLoc);
+        file.getParentFile().mkdirs();
+        FileWriter writer = new FileWriter(file);
+        BufferedWriter bufferedWriter = new BufferedWriter(writer);
+        bufferedWriter.write(buf.toString());
+        bufferedWriter.close();
+        */
     }
 }
